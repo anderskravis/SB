@@ -1,0 +1,649 @@
+/* 
+==========================
+==========================
+
+- SHOWBOAT WEBSITE CSS -
+
+==========================
+==========================
+*/
+
+
+body {
+    padding: 0;
+    margin: 0; 
+    overflow-x: hidden;
+    font-family: 'Open Sans', arial, sans-serif;
+    
+    /* make text look better */
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
+.nolink {
+    text-decoration: none;   
+}
+
+
+/* 
+--------------------------
+
+Home Nav
+
+--------------------------
+*/
+
+
+nav {
+/* background: #1F4788; */
+    height: 60px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    margin: auto;
+    top: 30px;
+    width: 170px;
+    height: 150px;
+    background: url(/img/ShowboatLogo.png) no-repeat;
+    background-size: contain;
+    z-index: 100;
+}
+
+
+/* 
+--------------------------
+
+HEADER
+
+--------------------------
+*/
+
+#header {
+    height: 95vh;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    background: url(/img/concert.jpg);
+}
+
+#header:after {
+   position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';   
+background-color: rgba(255,55,67,0.9);   
+-webkit-animation: bg 25s;
+-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+
+}
+
+
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes bg {
+    0% {background-color: rgba(255,55,67,0.9);}
+    40% {background-color: rgba(169, 44, 235, 0.9);}     
+    60% {background-color: rgba(55, 63, 255, 0.9);}
+    100% {background-color: rgba(255,55,67,0.9);}
+    }
+}
+
+#headerbg {
+    background:
+ url(/img/concert.jpg);
+    background-size: cover;
+    background-position: bottom center; 
+opacity: 0.5;
+height: 95vh;
+}
+
+
+
+
+.pitch {
+    padding-top: 100px; 
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+
+}
+
+.pitch h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+
+}
+
+.pitch h2 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+.redbutton {
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.3);
+    font-family: 'Montserrat', arial;
+    text-decoration: none;
+    cursor: pointer;
+    transition: linear .2s;
+    position: relative;
+}
+
+.redbutton:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+
+
+.bluebutton {
+    border-radius: 50px;
+    padding: 10px 43px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color:#FF3243;
+;
+    text-decoration: none;
+    cursor: pointer;
+    transition: linear .2s;
+    position: relative;
+}
+
+.bluebutton:hover {
+    background-color: #db2d3b;
+    color: #ffffff;
+}
+
+
+/* 
+--------
+Email 
+--------
+*/
+
+.email {
+    color: #999;
+    text-align: left;
+    padding: 17px 30px;
+    height: 300px;
+    width: 450px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -50px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 6px 6px 0px 0px;
+    z-index: 2;
+    opacity: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+
+    -webkit-animation: youvegotmail 0.75s forwards;
+    -webkit-animation-delay: .5s;
+    animation: youvegotmail 0.75s forwards;
+    animation-delay: .5s;
+}
+
+
+    @-webkit-keyframes youvegotmail {
+    100% { bottom: 0px; opacity: 100; }
+    }
+
+
+    @keyframes youvegotmail {
+    80% { opacity: 0.5;}
+    }
+
+    @keyframes youvegotmail {
+    100% { bottom: 0px; opacity: 100;}
+    }
+
+
+.email .new {
+    position: absolute;
+    left: 12px;
+    top: 21px;
+    font-size: .75em;
+    color: #1c9fff;
+}
+
+.emailcontent {
+    background: #ffffff;
+    margin-top: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.emailhead {
+    background: #000;
+    font-weight: 800;
+    color: white;
+    padding: 10px;
+}
+
+.emailpic {
+    background: url(/img/Beatles.jpg);
+    background-size: cover;
+    height: 100px;
+    padding: 10px;
+}
+
+.emailbody{
+    padding: 20px; 
+    font-size: 1em;
+}
+
+/* 
+--------------------------
+
+CONTENT AREA
+
+--------------------------
+*/
+
+#content {
+    background: #ffffff;
+    padding:20px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.subcatch {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #FF3243;  
+}
+
+.flexbox {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-flow: wrap;
+    flex-wrap:  wrap;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#content .stepbox {
+    border-radius: 6px;
+    border: 1px solid #ededed;
+    margin: 20px;
+    padding: 15px;
+    width: 300px;
+}
+
+#content .stepbox .number{
+    text-align: left !important;
+    font-weight: 800;
+    font-size: 2em;
+    color: #FF3243;  
+    float: left;
+    display: inline-block;
+    width: 10%;
+}
+
+
+#content .stepbox .text{
+    text-align: left !important;
+    display: inline-block;
+    width: 80%;
+    padding-left: 2px;
+    padding-top: 10px;
+}
+
+#content .stepbox .integrations{
+    position: relative;
+    left: 20%;
+    margin-top: 10px;
+    background: url(/img/integrations-stacked.png) no-repeat;
+    height: 150px;
+    background-size: contain;
+}
+
+#content .stepbox .mail{
+    position: relative;
+    left: 20%;
+    margin-top: 10px;
+    background: url(/img/mail.png) no-repeat;
+    height: 150px;
+    background-size: contain;
+}
+
+
+
+.subnote {
+    color: #CDD5E2;
+    font-size: 12px;
+    margin-bottom: 60px; 
+    padding-top: 20px;
+}
+
+/* 
+--------------------------
+
+FOOTER
+
+--------------------------
+*/
+
+footer{
+    background: #ffffff;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footerleft {
+    padding: 20px;
+    float: left;
+}   
+
+.footerright {
+    padding: 20px;
+    float: right;
+}
+
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    padding: 10px;
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+.faintlink {
+    color: #CDD5E2;   
+}
+
+.bluelink {
+    color: #FF3243;  
+}
+
+.lbluelink {
+    color:#02C1FF;
+}
+
+
+
+
+/* 
+--------------------------
+
+MEDIA QUERIES
+
+--------------------------
+*/
+
+
+@media (max-width: 650px) {
+
+    #header {
+        padding: 50px;  
+        height: 700px;
+    }
+
+    .logo {
+    position: relative;
+        left: 0px;
+        top: 0px;
+        margin: auto;
+    }
+
+    .email {
+        width: 70%;   
+    }
+
+
+
+    .footerleft {
+        margin: auto;
+        float: none;
+    }
+
+    .footerright {
+        margin: auto;
+        float: none;
+    }
+    
+    .subpagenav .logo {
+        position: relative;
+        left: 0px;
+        top: 10px;
+    }
+    
+}
+
+
+/* 
+--------------------------
+
+SUBPAGE STYLES
+
+--------------------------
+*/
+
+
+/* +++++ Navigation +++++ */
+
+.subpagenav {
+    background: #1F4788; 
+    height: 90px;
+    position: relative;
+    background:
+        linear-gradient(
+          rgba(31, 71, 136, 0.8), 
+          rgba(31, 71, 136, 0.8)
+        ),
+ url(http://40.media.tumblr.com/b3d8cc24ae0595168e73d773e1c9b6b9/tumblr_mvyxuasfJ91st5lhmo1_1280.jpg);
+    background-size: cover;
+    background-position: top center; 
+}
+
+.subpagenav .logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: white;
+    transition: ease .5s;
+}
+
+
+/* +++++ Body +++++ */
+
+
+#subpagecontent {
+    background: #ffffff;
+    padding:20px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.steptitle {
+    margin-top: 60px;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #1F4788;  
+}
+
+/* +++++ Form +++++ */
+
+.formcontainer {
+    width: 100%; 
+    max-width: 500px;
+    margin: auto;
+}
+
+.fieldbox {
+    background: white;
+    border-radius: 6px;
+    padding: 0px 0px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    display: block;
+}
+
+.field {
+    position: relative;
+    width: 80%;
+    border-radius: 6px;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.25em;
+    border: 2px solid #CDD5E2;
+    margin-bottom: 10px;
+    transition: linear .2s;
+}
+
+
+.field:focus {
+    border-color: #02C1FF;
+    outline: none;
+}
+
+.bottombutton {
+    position: relative;
+    border-radius: 50px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #02C1FF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: linear .2s;
+    box-sizing: border-box;
+    width: 200px;
+    margin: 30px auto;
+}
+
+
+.bottombutton:hover {
+    background-color: #00a3d8;   
+}
+
+/* different background images for each step's page */
+
+    .fieldbox .stepemail {
+        position: relative;
+        margin: 30px auto;
+        background: url(/img/mail.png) no-repeat;
+        height: 150px;
+        width: 200px;
+        background-size: cover;
+    }
+
+    .fieldbox .steplocation {
+        position: relative;
+        margin: 30px auto;
+        background: url(https://d13yacurqjgara.cloudfront.net/users/68544/screenshots/1121716/favorite_place.png) no-repeat;
+        height: 150px;
+        width: 200px;
+        background-size: cover;
+    }
+
+
+    .fieldbox .stepmusic {
+        position: relative;
+        margin: 30px auto;
+        background: url(https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1736448/db_groovin_1x.png
+    ) no-repeat;
+        height: 150px;
+        width: 200px;
+        background-size: cover;
+    }
+
+/* end images */
+
+
+.stepnote {
+font-size: 12px;
+color: #999;
+margin: 0;
+}
+
+
+.fbbutton {
+background: url(/img/facebook.png) no-repeat;
+height: 70px;
+background-position: center;
+margin: 30px; auto;
+background-size: contain; 
+}
+
+#bottomfooter {
+position: absolute;
+bottom: 0;
+background: none;
+}
+
+
+.servicelisting {
+    border-radius: 6px;
+    border: 1px solid #CDD5E2;
+    margin: 15px;
+    padding: 10px;
+    transition: linear 0.25s;
+}
+
+.servicelisting:hover {
+    border: 1px solid #1F4788;
+}
+
+
+
+/* 
+--------------------------
+
+SUBPAGE MEDIA QUERIES
+
+--------------------------
+*/
+
+
+@media (max-width: 650px) {
+
+
+    .subpagenav .logo {
+        text-align: center;
+        left: 0px;
+        position: relative;
+        top: 30px;
+    }
+    
+}

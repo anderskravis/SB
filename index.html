@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>Showboat.me</title>
+
+<!-- External Assets --> 
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>   
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  
+    
+    
+<!-- Internal Assets -->   
+<link href='/css/showboat_Feb9.css' rel='stylesheet' type='text/css'>   
+
+</head>
+
+    
+    
+<body>
+
+
+<!-- 
+--------------------
+Start Page Header
+--------------------
+-->  
+    
+<div id="header">
+
+<nav>
+    <div class="logo"></div>    
+</nav>    
+    
+    <!-- Headline --> 
+    <div class="pitch">
+
+        <h1>Never Miss a Concert Again.</h1>
+        <h2>Get email alerts of nearby shows based on the music you listen to</h2>
+        <a href="page1.html" class="redbutton">Sign Up For Alerts  <i class="fa fa-arrow-right" style="font-size:1em;"></i></a>
+
+    </div>
+
+    <!-- Slide in Email -->
+     <div class="email">
+         <i class="new fa fa-circle"></i>
+         <span>From: Showboat</span><br>
+         <span>To: me</span><br>
+         <div class="emailcontent">
+             <div class="emailhead">
+                 New Concert Alert:
+             </div>
+            <div class="emailpic">
+                 
+             </div>
+            <!-- Email body content is adjusted via JS for date and location -->
+            <div class="emailbody">
+                <span style="color:black; font-weight: 700;">The Beatles</span> added <span style=""> a new show</span>
+                <p style="font-size: .75em;"><span id="showdate">February 9</span> in <span id="currentlocation">Toronto, ON</span></p>
+             </div>
+         </div> 
+    </div>   
+ 
+</div>
+
+<!-- 
+--------------------
+Start Page Content
+--------------------
+-->  
+    
+<div id="content">
+
+    <p class="subcatch">Yep. It's that simple.</p>
+
+    <div class="flexbox">
+    
+        <div class="stepbox">
+            <div class="number"> 1 </div>
+            <div class="text">We sync with your music and use our awesome algorithm to analyze what you care about.</div>  
+            <div class="integrations"></div>
+        </div>
+        
+        <div class="stepbox">
+            <div class="number"> 2 </div>
+            <div class="text">You get an email whenever your favourite bands announce a new show in town</div>  
+            <div class="mail"></div>
+        </div>
+
+        
+    </div>
+
+    <a href="page1.html" class="bluebutton">Get Started</a>
+    <p class="subnote"> Don't worry, we respect the privacy of your taste in music </p>
+    
+</div>
+    
+
+<!-- 
+--------------------
+Start Footer
+--------------------
+-->  
+    
+<footer id="footer">
+    
+    <div class="footerleft">
+        <ul>
+            <li><a href="#" class="faintlink">Terms & Privacy</a></li>
+        </ul>
+    </div>
+
+    <div class="footerright">
+        <ul>
+            <li><a href="#" class="bluelink">Twitter</a></li>
+            <li><a href="#" class="bluelink">Facebook</a></li>
+        </ul>
+    </div>
+    
+</footer>
+    
+<!-- 
+====================
+--------------------
+End Page, Start Scripts
+--------------------
+====================
+-->  
+
+<!-- External script for converting time to readable string -->
+<script type="text/javascript" src="/js/moment.js"></script>
+<!-- External script for parsing location via google API -->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+ 
+    
+<!-- Custom JS -->
+<script type="text/javascript">
+    
+function geolocate() {
+// Gets the location of the current user's browser and feeds the email location with the city & region (little details that matter).
+    
+    if (google.loader.ClientLocation) {
+         
+        var city = google.loader.ClientLocation.address.city;
+       
+        var region = google.loader.ClientLocation.address.region;
+       
+        var location =  city + ', ' + region;
+     
+    } else {
+         
+        var location = 'your city';
+     
+    }
+     
+    document.getElementById("currentlocation").innerHTML=(location);
+
+}
+    
+function dateadjust() {
+// Sets the email concert's date 2 days in the future so the site is always up-to-date.
+
+  var NowMoment = moment().add('days',2).format("ddd, MMMM Do");
+
+    document.getElementById("showdate").innerHTML=(NowMoment);
+}
+    
+// Run the functions
+    
+geolocate();
+dateadjust();
+ 
+</script>
+    
+    
+
+</body>
+</html>
+
