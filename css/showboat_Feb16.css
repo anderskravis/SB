@@ -47,7 +47,7 @@ nav {
     top: 30px;
     width: 170px;
     height: 150px;
-    background: url(/img/ShowboatLogo.png) no-repeat;
+    background: url(img/ShowboatLogo.png) no-repeat;
     background-size: contain;
     z-index: 100;
 }
@@ -66,7 +66,7 @@ HEADER
     position: relative;
     text-align: center;
     z-index: 1;
-    background: url(/img/concert.jpg);
+    background: url(img/concert.jpg);
 }
 
 #header:after {
@@ -92,7 +92,7 @@ background-color: rgba(255,55,67,0.9);
 
 #headerbg {
     background:
- url(/img/concert.jpg);
+ url(img/concert.jpg);
     background-size: cover;
     background-position: bottom center; 
 opacity: 0.5;
@@ -234,7 +234,7 @@ Email
 }
 
 .emailpic {
-    background: url(/img/Beatles.jpg);
+    background: url(img/Beatles.jpg);
     background-size: cover;
     height: 100px;
     padding: 10px;
@@ -313,7 +313,7 @@ CONTENT AREA
     position: relative;
     left: 20%;
     margin-top: 10px;
-    background: url(/img/integrations-stacked.png) no-repeat;
+    background: url(img/integrations-stacked.png) no-repeat;
     height: 150px;
     background-size: contain;
 }
@@ -322,7 +322,7 @@ CONTENT AREA
     position: relative;
     left: 20%;
     margin-top: 10px;
-    background: url(/img/mail.png) no-repeat;
+    background: url(img/mail.png) no-repeat;
     height: 150px;
     background-size: contain;
 }
