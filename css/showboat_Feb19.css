@@ -224,7 +224,7 @@ Email
 }
 
 .emailpic {
-    background: url(/img/beatles.jpg);
+    background: url(http://anderskravis.com/tests/img/beatles.jpg);
     background-size: cover;
     height: 100px;
     padding: 10px;
