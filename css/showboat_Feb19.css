@@ -430,11 +430,11 @@ MEDIA QUERIES
 */
 
 
-@media (max-width: 650px) {
+@media all and (max-width: 650px) {
 
     #header {
         padding: 50px;  
-        height: 700px;
+        height: 800px;
     }
 
     .logo {
