@@ -62,7 +62,8 @@ HEADER
 */
 
 #header {
-    height: 95vh;
+    height: 92vh;
+    min-height: 700px;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -80,7 +81,6 @@ position: absolute;
     background-color: rgba(255,55,67,0.9);   
     -webkit-animation: bg 25s;
     -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
-
 }
 
 
@@ -91,7 +91,6 @@ position: absolute;
     60% {background-color: rgba(55, 63, 255, 0.9);}
     100% {background-color: rgba(255,55,67,0.9);}
     }
-}
 
 #headerbg {
     background:
@@ -149,25 +148,6 @@ position: absolute;
 }
 
 
-.bluebutton {
-    border-radius: 50px;
-    padding: 10px 43px;
-    color: #ffffff;
-    background-color:#FF3243;
-    font-size: 1.2em;
-    font-weight: 700;
-    font-family: 'Montserrat', arial;
-    text-decoration: none;
-    cursor: pointer;
-    transition: linear .2s;
-    position: relative;
-}
-
-.bluebutton:hover {
-    background-color: #db2d3b;
-    color: #ffffff;
-}
-
 
 /* 
 --------
@@ -188,7 +168,7 @@ Email
     right:0;
     margin-left:auto;
     margin-right:auto;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
     z-index: 2;
     opacity: 0;
 
@@ -216,27 +196,35 @@ Email
 .email .new {
     position: absolute;
     left: 12px;
-    top: 21px;
+    top: 22px;
     font-size: .75em;
     color: #1c9fff;
 }
 
 .emailcontent {
     background: #ffffff;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     z-index: -1;
 }
 
+.email .from {
+    /* color: #1c9fff; */
+    color: #3b3b3b;
+    font-weight:700
+}
+
+
+
 .emailhead {
-    background: #000;
+    background: #3b3b3b;  
     font-weight: 800;
     color: white;
     padding: 10px;
 }
 
 .emailpic {
-    background: url(http://anderskravis.com/tests/img/Beatles.jpg);
+    background: url(/img/beatles.jpg);
     background-size: cover;
     height: 100px;
     padding: 10px;
@@ -264,12 +252,28 @@ CONTENT AREA
 
 
 .subcatch {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1.5em;
     font-weight: 800;
-    color: #FF3243;  
+    color: #3b3b3b;  
+    line-height: 1.8em;
 }
 
+
+.underlined {
+    border-bottom: 2px solid #555;
+    -webkit-animation: underlinebg 25s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes underlinebg {
+    0% {border-color: rgba(255,55,67,0.9);}
+    40% {border-color: rgba(169, 44, 235, 0.9);}     
+    60% {border-color: rgba(55, 63, 255, 0.9);}
+    100% {border-color: rgba(255,55,67,0.9);}
+}
 
 
 
@@ -304,6 +308,11 @@ CONTENT AREA
 }
 
 
+.explainer {
+ margin-top: 50px;   
+}
+
+
 .explainer-left {
  
     width: 50%;
@@ -322,12 +331,11 @@ CONTENT AREA
 }
 
 
-
 .explainer-head {
     margin: 10px auto;
     font-size: 1.5em;
     font-weight: 500;
-    color: #3b3b3b;   
+    color: #3b3b3b;  
 }
 
 
@@ -348,10 +356,35 @@ CONTENT AREA
 
 
 
+.closing {
+     margin-top: 70px;   
+}
+
+.botbutton {
+    border-radius: 50px;
+    padding: 10px 43px;
+    color: #ffffff;
+    background-color:#FF3243;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Montserrat', arial;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: linear .2s;
+}
+
+.botbutton:hover {
+    background-color: #db2d3b;
+    color: #ffffff;
+}
+
+
+
 .subnote {
     color: #CDD5E2;
     font-size: 12px;
-    margin-bottom: 60px; 
+    margin-bottom: 30px; 
     padding-top: 20px;
 }
 
@@ -434,7 +467,7 @@ MEDIA QUERIES
 
     #header {
         padding: 50px;  
-        height: 800px;
+        height: 725px;
     }
 
     .logo {
@@ -444,6 +477,15 @@ MEDIA QUERIES
         margin: auto;
     }
     
+    
+    
+    .pitch h1 {
+        font-size: 1.75em;
+    }
+
+    .pitch h2 {
+        font-size: 1em;
+    }
     
     .redbutton {
     font-size: 1em;
@@ -472,6 +514,7 @@ MEDIA QUERIES
         left: 0px;
         top: 10px;
     }
+    
     
     
     

@@ -55,11 +55,11 @@ Start Page Header
     <!-- Slide in Email -->
      <div class="email">
          <i class="new fa fa-circle"></i>
-         <span>From: Showboat</span><br>
-         <span>To: me</span><br>
+         <span class="from">Showboat</span><br>
+         <span class="">to me</span><br>
          <div class="emailcontent">
              <div class="emailhead">
-                 <i class="fa fa-bell"></i> New Concert Alert
+                 <i class="fa fa-bolt" style="color:rgba(255,255,255,0.25);"></i> New Concert Alert
              </div>
             <div class="emailpic">
                  
@@ -83,22 +83,16 @@ Start Page Content
     
 <div id="content">
 
-    <p class="subcatch">The easiest way to make sure you get tickets</p>
+   <p class="subcatch">The <span class="underlined">easiest</span> way to make sure you get tickets.</p> 
+
 
     
+
+<div class="explainer">
     
-    
-        <!-- flexbox for integration options -->
+<!-- explainer row  -->
+
     <div class="flexbox">
-        <a href="#" class="servicelisting"><img src="img/logos/spotify.png"></a>
-        <a href="#" class="servicelisting"><img src="img/logos/lastfm.png"></a>
-        <a href="#" class="servicelisting"><img src="img/logos/itunes.png"></a>
-        <a href="#" class="servicelisting"><img src="img/logos/pandora.png"></a>
-    </div>
-    
-<!-- explainer column for sell reasons -->
-
-    <div class="explainer flexbox">
         
         <div class="explainer-left tleft">
             <h4 class="explainer-head">We sync with your music</h4>
@@ -112,9 +106,10 @@ Start Page Content
     </div>
     
     
-<!-- explainer column for sell reasons -->
+<!-- explainer row  -->
 
-    <div class="explainer flexbox">
+        
+    <div class="flexbox">
         
         <div class="explainer-left">
             <img src="img/2.png" width="100%">
@@ -125,17 +120,26 @@ Start Page Content
             <p class="explainer-desc"> Once you're set up we'll email you whenever relevant shows are announced nearby. Yep -  It's that simple.</p>
         </div> 
         
+    </div>  
     </div> 
     
-        
-
     
-    
- 
         
-
-    <a href="page1.html" class="bluebutton">Get Started  <i class="fa fa-arrow-right" style="font-size:1em;"></i></a>
+<div class="closing">
+    <a href="page1.html" class="botbutton">Get Started  <i class="fa fa-arrow-right" style="font-size:1em;"></i></a>
     <p class="subnote">We respect the privacy of your taste in music </p>
+</div>
+        
+        <!-- flexbox for integration options -->
+    <div class="flexbox">
+        <a href="#" class="servicelisting"><img src="img/logos/spotify.png"></a>
+        <a href="#" class="servicelisting"><img src="img/logos/lastfm.png"></a>
+        <a href="#" class="servicelisting"><img src="img/logos/itunes.png"></a>
+        <a href="#" class="servicelisting"><img src="img/logos/pandora.png"></a>
+    </div>        
+
+    
+    
     
 </div>
     
