@@ -466,15 +466,19 @@ MEDIA QUERIES
 @media all and (max-width: 650px) {
 
     #header {
-        padding: 50px;  
-        height: 725px;
+        padding: 30px;  
+        height: 700px;
     }
 
     .logo {
     position: relative;
         left: 0px;
-        top: 0px;
+        top: -10px;
         margin: auto;
+    }
+    
+    .pitch {
+    padding-top: 80px;   
     }
     
     
@@ -493,7 +497,13 @@ MEDIA QUERIES
     
 
     .email {
-        width: 70%;   
+    width: 70%;   
+    border-radius: 7px 7px 0px 0px;
+    height: 280px;
+    }
+    
+    .emailbody {
+    font-size: .9em;
     }
 
 
