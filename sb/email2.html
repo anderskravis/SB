@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+body {
+    margin: 0 auto; padding: 0; min-width: 100%!important;
+    background: #FF3241;   
+}
+
+      
+      
+#bodyTable {
+    font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+
+}
+      
+    
+#emailhead {
+width: 90%;
+max-width: 600px!important;
+
+}
+      
+#emailContainer {
+  background: #ffffff;
+    border-radius: 8px;
+max-width: 600px!important;
+}
+      
+#emailimage  {
+    width: 88%;
+    margin-bottom: 30px;
+}
+      
+#emailbutton {
+    webkit-appearance: none;
+    -webkit-user-select: none;
+    -webkit-writing-mode: horizontal-tb;
+    background-color: rgb(55, 63, 255) ;
+    border:10px solid rgb(55, 63, 255);
+    border-radius: 100px;
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+
+    h1 {
+    font-size: 26px;   
+    }
+      
+</style>    
+</head>
+    
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+    <tr>
+        <td align="center" valign="top">
+            <img src="img/email_head.png" id="emailhead">
+            <table border="0" cellpadding="5" cellspacing="0" width="90%" id="emailContainer">
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailHeader">
+                            <tr>
+                                <td align="center" valign="top">
+<a href="http://showboat.me"><img src="img/ShowboatLogo_r.png" width="200px;"> </a>                 </td>
+                               </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
+                                  <tr>
+                                <td align="center" valign="top">
+<img src="img/Beatles.jpg" id="emailimage">                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <h1 style="margin:0;">$title at $venue_name  </h1>      
+                                    <p>$show_date in $city, $state</p>
+                                    <button id="emailbutton">Get Tickets</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+                            <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
+                            <tr>
+                                <td align="center" valign="top" style="color:rgba(255,255,255,0.5); font-size:12px;">
+<p>          <a style="color:rgba(255,255,255,0.5); text-decoration: none;" href='http://showboat.me/unsubscribe.php?email=$email' target=_blank> Click here to unsubscribe from Showboat emails.</a></p><p>2129 N Dayton, Chicago, Illinois 60614</p>                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+        </td>
+    </tr>
+</table>
+    
+
+</html>

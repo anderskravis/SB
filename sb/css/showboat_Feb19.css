@@ -47,7 +47,7 @@ nav {
     top: 30px;
     width: 170px;
     height: 150px;
-    background: url(http://anderskravis.com/tests/img/ShowboatLogo.png) no-repeat;
+    background: url(http://anderskravis.com/tests/sb/img/ShowboatLogo.png) no-repeat;
     background-size: contain;
     z-index: 100;
 }
@@ -67,7 +67,7 @@ HEADER
     position: relative;
     text-align: center;
     z-index: 1;
-    background: url(http://anderskravis.com/tests/img/concert.jpg);
+    background: url(http://anderskravis.com/tests/sb/img/concert.jpg);
     background-size: cover;
     background-position: bottom center; 
 }
@@ -94,7 +94,7 @@ position: absolute;
 
 #headerbg {
     background:
- url(http://anderskravis.com/tests/img/concert.jpg);
+ url(http://anderskravis.com/tests/sb/img/concert.jpg);
     background-size: cover;
     background-position: bottom center; 
     opacity: 0.5;
@@ -224,7 +224,7 @@ Email
 }
 
 .emailpic {
-    background: url(http://anderskravis.com/tests/img/Beatles.jpg);
+    background: url(http://anderskravis.com/tests/sb/img/Beatles.jpg);
     background-size: cover;
     height: 100px;
     padding: 10px;
