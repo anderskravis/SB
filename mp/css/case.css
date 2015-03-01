@@ -1,0 +1,165 @@
+.case {
+margin: 0 auto;  
+text-align: center;
+margin-top: 80px;
+}
+
+.case h2 {
+text-align: left;
+max-width: 700px;
+font-size: 1.5em;
+margin: 0 auto;
+padding-bottom: 20px;
+margin-bottom: 40px;
+border-bottom: 1px solid #242424;
+font-family: 'PT Sans', sans-serif;
+}
+
+.case h1 {
+margin: 30px auto;
+color: #f05a28;
+font-size: 2.5em;
+}
+
+.case h3 {
+font-size: 2.5em;
+margin: 50px;
+font-weight: 800;
+font-family: 'PT Sans', sans-serif;
+
+}
+
+
+.orange {
+color: #f05a28;   
+}
+
+.white {
+color: #ffffff;   
+}
+
+.grey {
+color: #242424;   
+}
+
+.text {
+width: 90%;
+max-width: 700px; 
+margin: 0 auto;
+line-height: 2em;
+font-weight: 400;
+font-size: 1.3em;
+text-align: left;
+}
+
+p {
+padding-bottom: 15px   
+}
+
+
+.case #two {
+ 
+padding: 50px;
+background: url("/img/bg-map.png") #f0efef fixed;
+background-position: bottom;
+background-size: cover;
+    
+}
+
+.checklist {
+margin-bottom: 20px;  
+padding-left: 30px;
+}
+
+.checklist li{
+padding: 10px;
+padding-left: 0px;
+border-bottom: 1px solid #ccc;
+}
+
+.checklist li i{
+color: #f05a28;
+margin-right: 5px;
+font-size: 1.25em;
+    -ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}
+
+
+.note {
+font-size: 2em;
+line-height: 2em;
+font-style: italic;
+width: 80%;
+margin: auto;
+}
+
+
+.case #three {
+padding-top: 60px;
+background: url("/img/2.png") #72c363 no-repeat;
+background-position: bottom right;
+background-size: contain;
+    
+}
+
+.case #threeb {
+padding-top: 20px;
+background:#72c363;
+background-position: bottom right;
+background-size: contain;
+margin-bottom: -120px;
+}
+
+.case .screenshot {
+width: 80%;
+max-width: 1000px;
+position: relative;
+top: 50px;
+}
+
+.case #four {
+padding-top: 160px;
+background:  #5a953b ;
+padding: 50px;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 70%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    margin: auto;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vidblock {
+margin: 30px;   
+}
+
+
+.case #next {
+padding: 50px;
+background: url("/img/smart-centres.jpg") #fff no-repeat;
+background-position: bottom;
+    
+}
+
+.case #next .title {
+font-size: 1.5em;
+}
+
+.case #next a {
+border: 1px solid #f05a28; 
+}
