@@ -60,7 +60,7 @@ padding-bottom: 15px
 .case #two {
  
 padding: 50px;
-background: url("/img/bg-map.png") #f0efef fixed;
+background: url("http://anderskravis.com/tests/mp/img/bg-map.png") #f0efef fixed;
 background-position: bottom;
 background-size: cover;
     
@@ -98,7 +98,7 @@ margin: auto;
 
 .case #three {
 padding-top: 60px;
-background: url("/img/2.png") #72c363 no-repeat;
+background: url("http://anderskravis.com/tests/mp/img/2.png") #72c363 no-repeat;
 background-position: bottom right;
 background-size: contain;
     
@@ -151,7 +151,7 @@ margin: 30px;
 
 .case #next {
 padding: 50px;
-background: url("/img/smart-centres.jpg") #fff no-repeat;
+background: url("http://anderskravis.com/tests/mp/img/smart-centres.jpg") #fff no-repeat;
 background-position: bottom;
     
 }

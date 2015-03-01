@@ -45,7 +45,7 @@ font-weight: 600;
 #intro {
 font-family: 'merriweather', serif;
 color: #fff;
-background:  url("img/head2.png") #555;
+background:  url("http://anderskravis.com/tests/mp/img/head2.png") #555;
 background-size: cover;
 background-position: center;
 
@@ -128,7 +128,7 @@ margin-top: 30px;
 
 
 .testbubble {
-background: url("img/allan.jpg");
+background: url("http://anderskravis.com/tests/mp/img/allan.jpg");
 height: 120px;
 width: 120px;
 border-radius: 100px;
