@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/mp.css"> <!-- Resource style -->
     	<link rel="stylesheet" href="css/case.css"> <!-- Resource style -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" /> <!-- before after slider -->
+
 
 
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -57,8 +59,10 @@
     <!-- main content here -->
         
      <section id="one">
-
-    <img src="img/slide-2.png" class="bodyimg">
+<div class="twentytwenty-container bodyimg" style="margin: auto;">
+    <img src="img/slide-1.png" class="">
+    <img src="img/slide-2.png" class="">
+        </div>
     <h1>A New Approach to Network Visualization</h1>
     
     <h2>CenturyLink Technology Solutions (CTS) is a major player in the Data Centre space, focused on managed hosting and co-location services.</h2>
@@ -121,6 +125,8 @@ CTS wants to continue leading the way by approaching their offering differently,
     <section id="threeb">
         <h3 class="white"> The Breakthrough </h3>
       <div class="text white">
+                  <img src="img/tubemap.png" class="sideimg">
+
             <p>CTS wanted Myplanet to develop a new approach to visualizing and constructing a virtual data centre, emphasizing the topology (or arrangement) of the network.
 </p><p>The Myplanet team was going to have to create a tool that provided an overview of the connectivity of the system, showed how servers in the data centre communicated with one another and how data flowed between machines… and only had a few months to make it happen.</p>
         <p>During a brainstorming session, a team member mentioned how a network diagram reminded him of a map of the London tube with the branches, stations and colours representing different components of a virtual network.</p>
@@ -198,7 +204,20 @@ Over time, we developed two key assets: A composite displaying the topology of a
         
         
 	</main>
+    
+    
+    
+    
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+    
+ <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.35});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>    
 </body>
 </html>

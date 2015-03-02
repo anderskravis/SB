@@ -50,6 +50,7 @@ line-height: 2em;
 font-weight: 400;
 font-size: 1.3em;
 text-align: left;
+z-index:100;
 }
 
 p {
@@ -110,6 +111,7 @@ background:#72c363;
 background-position: bottom right;
 background-size: contain;
 margin-bottom: -120px;
+z-index: -10;
 }
 
 .case .screenshot {
@@ -146,6 +148,17 @@ padding: 50px;
 
 .vidblock {
 margin: 30px;   
+}
+
+.sideimg {
+position: absolute;
+z-index: 0;
+width: 40%;
+left: -350px;
+    -ms-transform: rotate(-21deg); /* IE 9 */
+    -webkit-transform: rotate(-21deg); /* Chrome, Safari, Opera */
+    transform: rotate(-21deg);
+box-shadow: 2px 3px 13px rgba(0,0,0,0.15);
 }
 
 
