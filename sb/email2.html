@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style type="text/css">
 
 body {
@@ -12,7 +14,7 @@ body {
       
 #bodyTable {
     font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-top: 5px;
+    margin-top: 15px;
 
 }
       
@@ -55,7 +57,14 @@ max-width: 600px!important;
 }
 
     h1 {
-    font-size: 26px;   
+    font-size: 28px;  
+    line-height: 38px;
+    width: 90%;
+    }
+    
+    .sub{
+    font-size: 21px;   
+    line-height: 28px;
     }
       
 </style>    
@@ -87,7 +96,7 @@ max-width: 600px!important;
                             <tr>
                                 <td align="center" valign="top">
                                     <h1 style="margin:0;">$title at $venue_name  </h1>      
-                                    <p>$show_date in $city, $state</p>
+                                    <p class="sub">$show_date in $city, $state</p>
                                     <button id="emailbutton">Get Tickets</button>
                                 </td>
                             </tr>
