@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>L</title>
+    
+<meta charset="utf-8" />
+    
+<!-- RESPONSIVE META TAG -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    
+<!-- FAVICON -->
+<link rel="shortcut icon" href="" />
+
+<!-- External Assets --> 
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Ubuntu:300' rel='stylesheet' type='text/css'>    
+    
+<!-- Internal Assets -->   
+<link href='css/l.css' rel='stylesheet' type='text/css'>   
+
+</head>
+
+    
+<body>
+
+ <!-- =============================================================================
+Body
+==================================================================================-->     
+<div id="container">
+ 
+    <h1>LILA</h1>
+
+    
+    <a href="#" id="orb">
+        
+     <div id="alarm_time">7:00<span class="ampm">AM</span></div>
+       
+        <div id="orb_center">
+            
+            <div id="orb_center_inner">
+            </div>
+
+
+        </div>
+    </a>
+    
+
+    <h3 id="alarm_status">Alarm Off</h3>
+
+    
+</div>
+
+<!-- =============================================================================
+Page Footer
+==================================================================================-->  
+    
+<footer id="footer">
+    
+    
+</footer>
+    
+<!-- 
+====================================================================================================
+SCRIPTS
+---------------------------------------------------------------------------------------------------->  
+
+<!-- External script for converting time to readable string -->
+<script type="text/javascript" src="js/moment.js"></script>
+<!-- External script for parsing location via google API -->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+ 
+    
+<!-- Custom JS -->
+<script type="text/javascript">
+    
+function geolocate() {
+// Gets the location of the current user's browser and feeds the email location with the city & region (little details that matter).
+    
+    if (google.loader.ClientLocation) {
+         
+        var city = google.loader.ClientLocation.address.city;
+       
+        var region = google.loader.ClientLocation.address.region;
+       
+        var location =  city + ', ' + region;
+     
+    } else {
+         
+        var location = 'your city';
+     
+    }
+     
+    document.getElementById("currentlocation").innerHTML=(location);
+
+}
+    
+function dateadjust() {
+// Sets the email concert's date 2 days in the future so the site is always up-to-date.
+
+  var NowMoment = moment().add('days',2).format("ddd, MMMM Do");
+
+    document.getElementById("showdate").innerHTML=(NowMoment);
+}
+    
+// Run the functions
+    
+geolocate();
+dateadjust();
+    
+</script>
+    
+    
+    
+
+</body>
+</html>
+
